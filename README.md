@@ -122,29 +122,37 @@ The poster above uses the local abstract background. In the app, you can also up
 
 ## Example campaign generation
 
-The following fictional brief shows how one event can produce different starting captions for different audiences. Replace these details with the event information you provide in **Create Campaign**.
+This example uses the Candlelight campaign saved in the app.
 
-**Brief:** Jazz Night at the Student Center, Friday at 7 PM. A live jazz performance and social evening. Tickets: `https://example.com/tickets`.
+**Brief:** Candlelight at Hammer Theatre, Saturday November 13, 2025. Theme: Coldplay. Tickets: [Hammer Theatre](https://www.hammertheatre.com/tickets).
 
 **Regulars**
 
-> Make Friday a familiar favorite with Jazz Night at the Student Center. Join us for a live jazz performance and an easygoing evening with the event community. Bring a friend, settle in, and enjoy the music. Get your tickets: https://example.com/tickets
+> Rediscover the magic of live music with us! Candlelight returns to the Hammer Theatre on Saturday, November 13, 2025, bringing the enchanting sounds of Coldplay to life. Don't miss your chance to experience this unforgettable evening. Get your tickets: https://www.hammertheatre.com/tickets
 >
-> #JazzNight #LiveMusic #CommunityEvents
+> #CandlelightEvent #HammerTheatre #ColdplayLive #MusicNights #ConcertExperience #LiveEntertainment
 
 **First-timers**
 
-> Curious about live jazz? Start with Jazz Night at the Student Center this Friday at 7 PM. Come as you are, enjoy the performance, and make a relaxed evening of it. It’s a welcoming way to try something new and meet other music fans. Get your tickets: https://example.com/tickets
+> Introducing Candlelight at Hammer Theatre on Saturday, November 13, 2025.
 >
-> #JazzNight #LiveJazz #ThingsToDo
+> Dive into the enchanting world of Coldplay with us. Perfect for first-timers, this event promises an unforgettable experience without the pressure. Join us for a night filled with stunning performances and heartfelt moments.
+>
+> Get your tickets: https://www.hammertheatre.com/tickets
+>
+> #CandlelightExperience #HammerTheatre #ColdplayNight #FirstTimersWelcome #MusicLoversUnite #EventMagic
 
 **Students**
 
-> Need a Friday night plan? Jazz Night brings live music to the Student Center at 7 PM. Invite a friend, take a break from the week, and enjoy an evening of jazz together. Check the event page for ticket details: https://example.com/tickets
+> Candlelight: A Night of Coldplay Vibes at Hammer Theatre
 >
-> #StudentEvents #JazzNight #CampusLife
+> Join us on Saturday, November 13, 2025, for an evening filled with Coldplay's music under the warm glow of candlelight. Perfect for music lovers and social butterflies alike, this event is for students looking for a memorable night out.
+>
+> Get your tickets: https://www.hammertheatre.com/tickets
+>
+> #CandlelightEvent #Coldplay #HammerTheatre #MusicLovers #StudentEvents #AffordableFun
 
-These are sample drafts, not guaranteed model output. Review dates, venue details, tone, links, and any claims before publishing.
+The captions above are lightly edited to remove decorative symbols and use the saved ticket link. Review the event date, venue, ticket link, and generated claims before publishing; the saved event date may need verification.
 
 The schedule is a planning queue. It does not run a background job, send notifications, or publish posts while the app is closed. Times use the computer's local timezone. Reviewer names are entered manually; the app does not have user accounts or role-based permissions.
 
@@ -195,12 +203,6 @@ eventpilot-ai/
 ├── generated/              # Campaign images created locally
 └── tests/                  # Campaign, publishing workflow, and poster tests
 ```
-
-## Resume bullets (use only after you have tested the project)
-
-- Built **EventPilot AI**, a local-first event marketing platform that generates audience-segmented social campaigns with a swappable LLM provider architecture and SQLite-backed campaign management.
-- Developed click-tracking and campaign analytics workflows to measure engagement by event and audience variant, with local branded image generation and a review-first publishing queue.
-- Designed a provider abstraction supporting local inference through Ollama and documented extension points for cloud model APIs and official Instagram publishing.
 
 Click analytics only count visits to the ticket links recorded by this app. They do not report social reach, impressions, or engagement on Instagram/Facebook. For people outside your computer to open tracked links, deploy the app and configure a public HTTPS base URL.
 
